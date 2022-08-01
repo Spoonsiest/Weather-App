@@ -9,6 +9,7 @@ body {
   max-width: 600px;
   max-height: 350px;
   background-color: #b7d3df;
+  margin-bottom: 0px;
 }
 #city-input {
   border: 1px solid;
@@ -93,6 +94,13 @@ h2 {
   font-weight: normal;
   font-size: 14px;
   padding: 8px 20px;
+}
+#footer-signature {
+  opacity: 70%;
+  margin-top: 0px;
+}
+#github-link {
+  text-decoration: none;
 }
 a:hover {
   cursor: pointer;
