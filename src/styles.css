@@ -1,99 +1,82 @@
+html {
+  background-color: #e0e0e0;
+}
 body {
   font-family: sans-serif;
+  max-width: 40%;
+  position: relative;
+  left: 30px;
+}
+li {
+  margin: 15px 0px;
 }
 #weather-app {
   border: 1px solid #dadde1;
-  padding: 20px;
-  margin: 20px auto;
+  margin: 8px auto;
   border-radius: 10px;
-  max-width: 600px;
-  max-height: 350px;
-  background-color: #b7d3df;
-  margin-bottom: 0px;
+  background-color: #dddddd;
+  padding: 10px;
 }
-#city-input {
+#all-info {
   border: 1px solid;
   border-radius: 10px;
-  border-color: #adbbbd;
-  padding: 8px 20px;
-  margin-bottom: 20px;
-  margin-right: 15px;
+  border-color: #cecece;
+  background-color: #dddddd;
+  max-width: 100%;
+  left: 12px;
+  position: relative;
 }
-#city-submit-button {
-  color: white;
-  background-color: #006ada;
-  border: 1px solid;
-  border-radius: 6px;
-  border-color: #adbbbd;
-  font-size: 15px;
-  font-weight: lighter;
-  padding: 8px 20px;
+#weather-icon {
+  display: inline;
+}
+#current-temperature {
+  font-size: 45px;
+  opacity: 90%;
+  margin: 0px 5px 5px 20px;
 }
 #currently-shown-city {
   color: #212121;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 400;
   line-height: 28px;
   text-transform: capitalize;
+  opacity: 85%;
+  margin: 20px 5px 5px 20px;
 }
 #current-time-shown {
-  color: #212121;
+  color: #1a1a1a;
   font-size: 15px;
   font-weight: normal;
   line-height: 28px;
-  margin: 0;
+  margin: 0px 5px 0px 20px;
+  opacity: 85%;
 }
 #current-weather-type {
   color: #212121;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 28px;
-  margin: 0;
+  margin: 0px 5px 0px 20px;
   text-transform: capitalize;
+  opacity: 85%;
 }
-h2 {
-  font-size: 60px;
-  font-weight: normal;
-}
+
 #list-of-stats {
   color: #212121;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 28px;
-  margin: 0;
+  margin: 20px 30px 15px 5px;
   text-decoration: none;
   list-style: none;
   display: block;
-  position: relative;
-  left: 240px;
-  bottom: 96px;
-  background-color: #d6efed;
-  padding: 5px 10px 5px 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  border-color: #adbbbd;
-  max-width: 27%;
+  background-color: #dddddd;
+  opacity: 85%;
 }
 #location-info {
   margin: 0;
-  background-color: #d6efed;
-  padding: 10px 30px 5px 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  border-color: #adbbbd;
-  max-width: 39%;
-}
-#current-location-button {
-  background-color: #5bb318;
-  position: relative;
-  left: 350px;
-  bottom: 61px;
-  border: 1px solid;
-  border-color: #adbbbd;
-  border-radius: 6px;
-  color: #ffff;
-  font-weight: normal;
-  font-size: 14px;
-  padding: 8px 20px;
+  background-color: #dddddd;
+  opacity: 90%;
+  margin-bottom: 0px;
 }
 #footer-signature {
   opacity: 70%;
@@ -102,7 +85,36 @@ h2 {
 #github-link {
   text-decoration: none;
 }
+#city-input {
+  border: 1px solid;
+  border-radius: 7px;
+}
+#f-c {
+  position: relative;
+  bottom: 52px;
+  left: 92px;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+#city-input {
+  padding: 6px;
+  margin: 0px 0px 3px 5px;
+  max-width: 100%;
+}
+.container {
+  background-color: #e0e0e0;
+  margin: 30px;
+}
 a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+.active {
+  color: #212121;
+  text-decoration: none;
+}
+.active:hover {
+  cursor: default;
+  color: #212121;
+  text-decoration: none;
 }
