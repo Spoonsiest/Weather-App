@@ -104,31 +104,6 @@ function inputCurrentLocationInfo(response) {
   getForecast(response.data.coord);
 }
 
-function convertToCelcius(event) {
-  event.preventDefault();
-  let celciusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
-  let temperatureElement = document.getElementById("current-temperature");
-  temperatureElement.innerText = `${Math.round(celciusTemperature)}°`;
-  fahrenheitElement.classList.remove("active");
-  celciusElement.classList.add("active");
-}
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.getElementById("current-temperature");
-  temperatureElement.innerText = `${Math.round(fahrenheitTemperature)}°`;
-  fahrenheitElement.classList.add("active");
-  celciusElement.classList.remove("active");
-}
-
-let fahrenheitTemperature = null;
-
-let celciusElement = document.getElementById("celcius");
-celciusElement.addEventListener("click", convertToCelcius);
-
-let fahrenheitElement = document.getElementById("fahrenheit");
-fahrenheitElement.addEventListener("click", convertToFahrenheit);
-
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
