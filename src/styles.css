@@ -1,5 +1,5 @@
 html {
-  background-color: #e0e0e0;
+  background-color: #bfc3ca;
 }
 body {
   font-family: sans-serif;
@@ -11,7 +11,7 @@ li {
   margin: 15px 0px;
 }
 #weather-app {
-  border: 1px solid #dadde1;
+  border: 1px solid #cecece;
   margin: 8px auto;
   border-radius: 10px;
   background-color: #dddddd;
@@ -32,7 +32,8 @@ li {
 #current-temperature {
   font-size: 45px;
   opacity: 90%;
-  margin: 0px 5px 5px 20px;
+  position: relative;
+  top: 20px;
 }
 #currently-shown-city {
   color: #212121;
@@ -49,7 +50,7 @@ li {
   font-weight: normal;
   line-height: 28px;
   margin: 0px 5px 0px 20px;
-  opacity: 85%;
+  opacity: 70%;
 }
 #current-weather-type {
   color: #212121;
@@ -63,9 +64,9 @@ li {
 
 #list-of-stats {
   color: #212121;
-  font-size: 17px;
-  line-height: 28px;
-  margin: 20px 30px 15px 5px;
+  font-size: 18px;
+  line-height: 50px;
+  margin: 15px 30px 0px 5px;
   text-decoration: none;
   list-style: none;
   display: block;
@@ -77,6 +78,32 @@ li {
   background-color: #dddddd;
   opacity: 90%;
   margin-bottom: 0px;
+}
+#forecast {
+  color: #212121;
+  background-color: #dddddd;
+  max-width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #cecece;
+  text-align: center;
+}
+#forecast-date {
+  opacity: 85%;
+  position: relative;
+  top: 8px;
+}
+#forecast-temps {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+#forecast-temp-max {
+  opacity: 85%;
+}
+#forecast-temp-min {
+  opacity: 55%;
+}
+#forecast-icon {
 }
 #footer-signature {
   opacity: 70%;
@@ -91,10 +118,9 @@ li {
 }
 #f-c {
   position: relative;
-  bottom: 52px;
-  left: 92px;
-  font-size: 18px;
-  letter-spacing: 5px;
+  top: 45px;
+  font-size: 16px;
+  left: 5px;
 }
 #city-input {
   padding: 6px;
@@ -102,7 +128,7 @@ li {
   max-width: 100%;
 }
 .container {
-  background-color: #e0e0e0;
+  background-color: #bfc3ca;
   margin: 30px;
 }
 a:hover {

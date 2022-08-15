@@ -19,27 +19,35 @@
       <div id="weather-app">
         <form id="city-form">
           <div class="row">
-            <div class="col-6">
-              <input type="text" id="city-input" placeholder="Type a city.." />
+           <div class="col-6">
+             <input type="text" id="city-input" placeholder="Type a city.." />
             </div>
-              <div class="col-2">
-               <input type="submit" id="city-submit-button" value="Search" class="btn btn-primary" />
-              </div>
-              <div class="col-4">
-              <button id="current-location-button" class="btn btn-success">Current Location</button>
+           <div class="col-2">
+             <input type="submit" id="city-submit-button" value="Search" class="btn btn-primary" />
             </div>
+           <div class="col-4">
+             <button id="current-location-button" class="btn btn-success">Current Location</button>
             </div>
           </div>
         </form>
+      </div>
         <div class="row" id="all-info">
           <div class="col-7">
             <div id="location-info">
               <h1 id="currently-shown-city">Portland</h1>
               <h6 id="current-time-shown"></h6>
               <h6 id="current-weather-type">Clear Sky</h6>
-              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" id="weather-icon">
-              <h2 id="current-temperature">96°</h2>
-              <span id="f-c"><a href="#" id="fahrenheit" class="active">F</a>|<a href="#" id="celcius">C</a></span>
+              <div class="row">
+                <div class="col-3">
+                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" id="weather-icon">
+                </div>
+                <div class="col-2">
+                 <h2 id="current-temperature">96</h2>
+                </div>
+                <div class="col-3">
+                  <span id="f-c"><a href="#" id="fahrenheit" class="active">°F</a>|<a href="#" id="celcius">°C</a></span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-5">
@@ -49,6 +57,9 @@
              <li id="wind">Wind: 7mph</li>
            </ul>
           </div>
+        </div>
+        <div class="weather-forecast" id="forecast">
+          
         </div>
         <p id="footer-signature">
           Open-source code by
