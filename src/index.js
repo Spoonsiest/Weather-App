@@ -9,9 +9,17 @@ let days = [
   "Friday",
   "Saturday",
 ];
-let formattedDate = `${
-  days[now.getDay()]
-} ${now.getHours()}:${now.getMinutes()}`;
+let minutes = now.getMinutes();
+let hours = now.getHours();
+
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+if (hours < 10) {
+  hours = `0${hours}`;
+}
+
+let formattedDate = `${days[now.getDay()]} ${hours}:${minutes}`;
 
 date.innerText = `Last Updated: ${formattedDate}`;
 
